@@ -1,0 +1,9 @@
+$(function(){
+	$('.product').mouseover(function(){
+		console.log($('.product').index($(this)));
+		$('.trsf').eq($('.product').index($(this))).css('transform','scale(1.1)')
+	})
+	$('.product').mouseout(function(){
+		$('.trsf').eq($('.product').index($(this))).css('transform','scale(1)')
+	})
+})

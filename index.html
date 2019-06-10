@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>易果生鲜Yiguo网_全球精选_生鲜果蔬 品质食材_易果网yiguo.com</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/indexJQ.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="t topNav">
+				<div class="c wrap">
+					<ul id="wrapLeft" class="l">
+						<li class="wrapLeftText l">欢迎光临易果生鲜!</li>
+						<li class="wrapLeftText l">配送至：</li>
+						<li class="wrapLeftText l">
+							<a class="cityName l">
+								上海
+								<i></i>								
+							</a>
+							<div class="cityNameBox">
+								<div class="cityNameBoxTop">
+									<p class="l">请根据你的收货地址选择</p>
+									<p class="r" style="color: #007F4D;">全国其他城市 >></p>
+								</div>
+								<div id="hotCity" >
+									<img src="img/index/hotCity.png"/>
+								</div>
+								<ul id="cList">
+									<li id="cityListOne" class="cityList l">
+										ABCDE
+										<div id="cityListBoxOne" class="cityListBox">
+											<img src="img/index/cityNamea-e.png"/>
+										</div>
+									</li>
+									<li id="cityListTwo"class="cityList l">
+										FGHIJ
+										<div id="cityListBoxTwo" class="cityListBox">
+											<img src="img/index/cityNamef-j.png"/>
+										</div>
+									</li>
+									<li class="cityList l">
+										KLMNO
+										<div class="cityListBox"></div>
+									</li>
+									<li class="cityList l">
+										PQRST
+										<div class="cityListBox"></div>
+									</li>
+									<li class="cityList l">
+										UVWXYZ
+										<div class="cityListBox"></div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<ul id="wrapRight" class="r">
+						<li class="wrapRightText "><a href="login.html">[登录]</a></li>
+						<li class="wrapRightText">[注册]</li>
+						<li class="wrapRightText ">
+							<i class="topBtn topBtnPeople"></i>
+							我的易果
+							<i class="topBtn topBtnList"></i>
+						</li>
+						<li class="wrapRightText">
+							<i class="topBtn topBtnPhone"></i>
+							手机易果
+						</li>
+						<li class="wrapRightText">
+							<i class="topBtn topBtnGiftCard"></i>
+							礼品卡绑定
+						</li>
+						<li class="wrapRightText">
+							<i class="topBtn topBtnGift"></i>
+							礼品兑换卷入口
+						</li>
+						<li class="wrapRightText">
+							<i class="topBtnBusiness"></i>
+							营业资质
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="t headerSearch">
+					<div class="c headerSearchBox">
+						<img class="l" style="margin-top: 15px;" src="img/icon/logo.png"/>
+						<div class="l SearchBox">
+							<div class="SearchInputBtn">
+								<input type="text" id="searchText" placeholder="输入商品名/编号/拼音" />
+								<input type="button" id="searchBtn" value="搜索" />
+							</div>
+							<ul id="searchMenu">
+								<li class="searchMenuName l">虾仁</li>
+								<li class="searchMenuName l">三文鱼</li>
+								<li class="searchMenuName l">冰鲜牛肉</li>
+								<li class="searchMenuName l">刺身</li>
+								<li class="searchMenuName l">新西兰鹿肉</li>
+								<li class="searchMenuName l">鳕鱼</li>
+								<li class="searchMenuName l">牛腱</li>
+								<li class="searchMenuName l">奇异果</li>
+							</ul>
+						</div>
+						<div class="r shopCar">
+							<!--<p class="shopCarOverNum">0</p>-->
+							<i class="topBtn shopCarPic l"><p class="shopCarOverNum">0</p></i>
+							<p class="shopCarNum l">0.0</p>
+						</div>
+					</div>
+			</div>
+			<!--------------------------吸顶-------------------------------->
+			<div class="t headerSearch2">
+					<div class="c headerSearchBox2">
+						<img class="l" style="transform: scaleX(0.72) scaleY(0.72);;" src="img/icon/logo.png"/>
+						<div class="l SearchBox2">
+							<div class="SearchInputBtn l">
+								<input type="text" id="searchText" placeholder="输入商品名/编号/拼音" />
+								<input type="button" id="searchBtn" value="搜索" />
+							</div>
+							<ul id="searchMenu2" class="l">
+								<li class="searchMenuName2 l">虾仁</li>
+								<li class="searchMenuName2 l">三文鱼</li>
+								<li class="searchMenuName2 l">冰鲜牛肉</li>
+								<li class="searchMenuName2 l">刺身</li>
+							</ul>
+						</div>
+						<div class="r shopCar2">
+							<!--<p class="shopCarOverNum">0</p>-->
+							<i class="topBtn shopCarPic l"><p class="shopCarOverNum">0</p></i>
+							<p class="shopCarNum2 l">0.0</p>
+						</div>
+					</div>
+			</div>
+			
+			
+			
+		</header>
+		
+		<div id="banner" class="t">
+			<div class="topNavMenuBoxFather c" >
+					全部商品分类▼
+					<ul id="topNavMenuBox" value="0">
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							进口水果
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							国产水果
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							<a href="goodsList.html">精选肉类</a>
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							禽类蛋品
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							即烹美食
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							海鲜水产
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							乳品糕点
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							新鲜蔬菜
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							方便速食
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							粮油杂货
+							<div class="topNavMenuName"></div>
+						</li>
+						<li class="topNavMenuNameList">
+							<i class="topNavMenuNameListBtnPic"></i>
+							饮料酒水
+							<div class="topNavMenuName"></div>
+						</li>						
+					</ul>
+				</div>
+			<div id="beforeBtn"><i class="beforePic slideBtn"></i></div>
+			<div id="nextBtn"><i class="nextPic slideBtn"></i></div>
+			<ul id="bannerPicBox">
+				<li class="bannerPicList" style="background-image: url(img/index/首页轮播.jpg);"></li>
+				<li class="bannerPicList" style="background-image: url(img/index/首页轮播2.jpg);"></li>
+				<li class="bannerPicList" style="background-image: url(img/index/首页轮播3.jpg);"></li>
+			</ul>
+			<div id="bannerPicBtnBox">
+					<span class="bannerPicBtn"></span>
+					<span class="bannerPicBtn"></span>
+					<span class="bannerPicBtn"></span>
+				</div>
+		</div>
+		<div class="adItem c">
+			<ul>
+				<li class="adItemPic l" style="background-image: url(img/index/adItem1.jpg);">
+					<p class="adItemText">
+						<b style="font-size: 22px;">新品专区</b>
+						<br />
+						"探访源头产地 臻选当令时鲜"
+					</p>
+				</li>
+				<li class="adItemPic l"style="background-image: url(img/index/adItem2.jpg);">
+					<p class="adItemText">
+						<b style="font-size: 22px;">新品专区</b>
+						<br />
+						"探访源头产地 臻选当令时鲜"
+					</p>
+				</li>
+				<li class="adItemPic l"style="background-image: url(img/index/adItem3.jpg);">
+					<p class="adItemText">
+						<b style="font-size: 22px;">新品专区</b>
+						<br />
+						"探访源头产地 臻选当令时鲜"
+					</p>
+				</li>
+				<li class="adItemPic l"style="background-image: url(img/index/adItem4.jpg);">
+					<p class="adItemText">
+						<b style="font-size: 22px;">新品专区</b>
+						<br />
+						"探访源头产地 臻选当令时鲜"
+					</p>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="goodsFloor c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorOne" style="color: #fc5f3c;">
+					<i class="goodsFloorPicFlag">F1</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">进口水果</i>
+				</h2>
+				<div  class="goodsFloorKindArea r">
+					进口苹果<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>佳沛专区<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>泰国鲜果
+				</div>				
+			</div>
+			<div class="FloorOneToThreeLeftPic l">
+				<img src="img/index/F1.jpg"/>
+			</div>
+			<div class="FloorOneToThreeRightPicBox l">
+				<ul>
+					<li class="FloorOneToThreeRightPic moveRight l"><a href="商品详情.html" class="moveRight"><img src="img/index/F101.jpg"/></a></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F102.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F103.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F104.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F105.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F106.jpg"/></li>
+				</ul>
+			</div>
+		</div>	
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorTwo" style="color: #008842;">
+					<i class="goodsFloorPicFlag twoFlag">F2</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">国产水果</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					芒香四溢<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>南国风情<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>精选苹果
+				</div>				
+			</div>
+			<div class="FloorOneToThreeLeftPic l">
+				<img src="img/index/F2.jpg"/>
+			</div>
+			<div class="FloorOneToThreeRightPicBox l">
+				<ul>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F201.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F202.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F203.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F204.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F205.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F206.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorThree"style="color: #45c6ce;">
+					<i class="goodsFloorPicFlag threeFlag">F3</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">海鲜水产</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					刺身专区<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>东海水产<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>海产干货
+				</div>				
+			</div>
+			<div class="FloorOneToThreeLeftPic l">
+				<img src="img/index/F3.jpg"/>
+			</div>
+			<div class="FloorOneToThreeRightPicBox l">
+				<ul>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F301.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F302.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F303.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F304.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F305.jpg"/></li>
+					<li class="FloorOneToThreeRightPic moveRight l"><img src="img/index/F306.jpg"/></li>
+				</ul>
+			</div>
+		</div>		
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorFour"style="color: #f0c000;">
+					<i class="goodsFloorPicFlag fourFlag">F4</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">精选肉类</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					欧洲天然猪<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>澳洲牛肉<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>肉类制品
+				</div>				
+			</div>
+			<div class="FloorFourToLastLeftPic l">
+				<img src="img/index/F4.jpg"/>
+			</div>
+			<div class="FloorFourToLastRightPicBox l">
+				<ul>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F401.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F402.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F403.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F404.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F405.jpg"/></li>
+					<li class="FloorFourToLastRightPic l" style="margin-top: 0px;background: white;border: none;">
+						<div class="FloorFourToLastTradeMarkBox">
+							<ul class="l">
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F4TradeMark01.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F4TradeMark02.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F4TradeMark03.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F4TradeMark04.png"/></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="FloorFourToLastRightBigPic moveRight">
+					<img src="img/index/F406.jpg"/>
+				</div>			
+		</div>
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorFive"style="color: #e08683;">
+					<i class="goodsFloorPicFlag fiveFlag">F5</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">禽类蛋品</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					原味蒸品<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>原汁煲汤<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>禽类分割品
+				</div>				
+			</div>
+			<div class="FloorFourToLastLeftPic l">
+				<img src="img/index/F5.jpg"/>
+			</div>
+			<div class="FloorFourToLastRightPicBox l">
+				<ul>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F501.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F502.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F503.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F504.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F505.jpg"/></li>
+					<li class="FloorFourToLastRightPic l" style="margin-top: 0px;border: none;">
+						<div class="FloorFourToLastTradeMarkBox">
+							<ul class="l">
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F5TradeMark01.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F5TradeMark02.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F5TradeMark03.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F5TradeMark04.jpg"/></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="FloorFourToLastRightBigPic moveRight">
+					<img src="img/index/F506.jpg"/>
+				</div>			
+		</div>
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorSix"style="color: #b84f00;">
+					<i class="goodsFloorPicFlag sixFlag">F6</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">粮油杂货</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					休闲零食<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>健康杂粮<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>进口食用油
+				</div>				
+			</div>
+			<div class="FloorFourToLastLeftPic l">
+				<img src="img/index/F6.jpg"/>
+			</div>
+			<div class="FloorFourToLastRightPicBox l">
+				<ul>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F601.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F602.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F603.jpg"/></li>
+					<li class="FloorFourToLastRightPic l" style="margin-top: 0px;border: none;">
+						<div class="FloorFourToLastTradeMarkBox">
+							<ul class="l">
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F6TradeMark01.png"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F6TradeMark02.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F6TradeMark03.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F6TradeMark04.jpg"/></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="FloorFourToLastRightBigPic moveRight">
+					<img src="img/index/F604.jpg"/>
+				</div>			
+		</div>
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorSeven"style="color: #764e00;">
+					<i class="goodsFloorPicFlag sevenFlag">F7</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">乳品糕点</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					味全乳品<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>精选蛋糕<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>美味面包
+				</div>				
+			</div>
+			<div class="FloorFourToLastLeftPic l">
+				<img src="img/index/F7.jpg"/>
+			</div>
+			<div class="FloorFourToLastRightPicBox l">
+				<ul>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F701.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F702.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F703.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F704.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F705.jpg"/></li>
+					<li class="FloorFourToLastRightPic l" style="margin-top: 0px;border: none;">
+						<div class="FloorFourToLastTradeMarkBox">
+							<ul class="l">
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F7TradeMark01.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F7TradeMark02.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F7TradeMark03.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F7TradeMark04.jpg"/></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="FloorFourToLastRightBigPic moveRight">
+					<img src="img/index/F706.jpg"/>
+				</div>			
+		</div>
+		<div class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 id="floorEight"style="color: #940606;">
+					<i class="goodsFloorPicFlag eightFlag">F8</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">饮料酒水</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					饮用水<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>果汁<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>白葡萄酒
+				</div>				
+			</div>
+			<div class="FloorFourToLastLeftPic l">
+				<img src="img/index/F8.jpg"/>
+			</div>
+			<div class="FloorFourToLastRightPicBox l">
+				<ul>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F801.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F802.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F803.jpg"/></li>
+					<li class="FloorFourToLastRightPic l" style="margin-top: 0px;border: none;">
+						<div class="FloorFourToLastTradeMarkBox">
+							<ul class="l">
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F8TradeMark01.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F8TradeMark02.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F8TradeMark03.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F8TradeMark04.jpg"/></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="FloorFourToLastRightBigPic moveRight">
+					<img src="img/index/F804.jpg"/>
+				</div>			
+		</div>
+		<div id="floorNine" class="goodsFloor goodsFloorMargin c">
+			<div class="goodsFloorNameBox c">
+				<h2 style="color: #3ca3dc;">
+					<i class="goodsFloorPicFlag nineFlag">F9</i>
+					<i style="display: inline-block;line-height: 42px;width: 100px;height: 32px;">方便速食</i>
+				</h2>
+				<div class="goodsFloorKindArea r">
+					港式面点<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>湾仔码头<b style=" margin-left: 10px;color: #B5B2A8;">︳</b>龙凤
+				</div>				
+			</div>
+			<div class="FloorFourToLastLeftPic l">
+				<img src="img/index/F9.jpg"/>
+			</div>
+			<div class="FloorFourToLastRightPicBox l">
+				<ul>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F901.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F902.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F903.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F904.jpg"/></li>
+					<li class="FloorFourToLastRightPic moveRight l"><img src="img/index/F905.jpg"/></li>
+					<li class="FloorFourToLastRightPic l" style="margin-top: 0px;border: none;">
+						<div class="FloorFourToLastTradeMarkBox">
+							<ul class="l">
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F9TradeMark01.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F9TradeMark02.png"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F9TradeMark03.jpg"/></li>
+								<li class="FloorFourToLastTradeMarkPic moveRight l"><img src="img/index/F9TradeMark04.jpg"/></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+				<div class="FloorFourToLastRightBigPic moveRight">
+					<img src="img/index/F906.jpg"/>
+				</div>			
+		</div>
+		<div id="sideBarMenu">
+			<ul>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn1" ></a>
+					<a class="sideBarMenuBtnText"href="#floorOne">进口水果</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn2" ></a>
+					<a class="sideBarMenuBtnText"href="#floorTwo">国产水果</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn3" ></a>
+					<a class="sideBarMenuBtnText"href="#floorThree">海鲜水产</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn4"  ></a>
+					<a class="sideBarMenuBtnText"href="#floorFour">精选肉类</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn5" ></a>
+					<a class="sideBarMenuBtnText"href="#floorFive">禽类蛋品</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn6" ></a>
+					<a class="sideBarMenuBtnText"href="#floorSix">粮油杂货</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn7" ></a>
+					<a class="sideBarMenuBtnText"href="#floorSeven">乳品糕点</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn8" ></a>
+					<a class="sideBarMenuBtnText"href="#floorEight">酒水饮料</a>
+				</li>
+				<li class="sideBarMenuBtnList">
+					<a class="sideBarMenuBtn9" ></a>
+					<a class="sideBarMenuBtnText" href="#floorNine">方便速食</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<footer>
+			<div class="t service">
+				<div class="c serviceBox">
+					<ul>
+						<li class="serviceNameList l">
+							<b>全球精选</b>
+							<span>一站式生鲜购物方案</span>
+						</li>
+						<li class="serviceNameList l">
+							<b>多仓直发</b>
+							<span style="padding-right: 63px;">次日达配送服务 </span>
+						</li>
+						<li class="serviceNameList l">
+							<b>品质严选</b>
+							<span>精选正宗品质好食材</span>
+						</li>
+						<li class="serviceNameList l">
+							<b>天天低价</b>
+							<span>会员专属优惠购不停</span>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			<div class="c footerContent">
+				<div class="footerContentBox l">
+					<div class="footerContentTitle">
+						<i class="footerContentTitlePic" style="display: inline-block;margin-top: -6px;"></i><p>新手指南</p>
+					</div>
+					<ul>
+						<li>账户注册</li>
+						<li>购物流程</li>
+						<li>订购方式</li>
+						<li>悠币说明</li>
+						<li>会员等级</li>
+					</ul>
+				</div>
+				<img src="img/index/footer.png"/>
+			</div>		
+			<div class="sidebar">
+				<a class="customerService"></a>
+				<a id="backTop"></a>
+			</div>
+		</footer>		
+	</body>
+</html>

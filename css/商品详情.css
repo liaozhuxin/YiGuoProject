@@ -1,0 +1,380 @@
+body{
+	background: #f7f9f8;
+	font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53"
+}
+.t{
+	width: 100%;
+}
+.c{
+	width: 1200px;
+	margin: 0 auto;
+}
+ul,li,a{	
+	text-align: center;
+	color: #444;
+	outline: none;
+	text-decoration: none;
+}
+.pageLocation{
+	height: 14px;
+	margin-top: 10px;
+}
+.pageLocation a{
+	margin: 0 10px;
+}
+.pageLocation a:hover{
+	text-decoration: none;
+	color: #008842;
+}
+.goodsDetailsBox{
+	position: relative;
+	height: 600px;
+	margin-top: 10px;
+}
+.goodsDetailsPicBox{
+	height: 600px;
+	width: 500px;
+}
+#picBox {
+	display: inline-block;
+    width: 500px;
+    height: 500px;    
+    overflow: hidden;
+    position: relative;
+}
+#square{
+	display: none;
+	width: 250px;
+	height: 250px;	
+	position: absolute;
+	left:0px;
+	top:0;
+	background-color: green;	
+	opacity: 0.5;	
+	z-index: 5;						
+}
+#hugePic{
+	display: none;
+	width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    z-index: 4;
+    border: 1px solid #007F4D;
+    overflow: hidden;
+}
+#huge{
+	width: 1000px;
+    height: 1000px;
+    position: absolute;
+	left:0px;
+	top:0;
+}
+.bigPic{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.bigPic:nth-child(1){
+	z-index: 4;
+}
+#btnBox{
+	display: inline-block;
+	width: 500px;
+	height: 97px;
+	margin-top: 10px;
+}
+.picBtn{
+	border-color: #008842;
+    padding: 0;
+/*    overflow: hidden;*/
+    height: 85px;
+    width: 85px;
+    border: 1px solid #bcbcbc;
+    margin-left: 16px;
+}
+.picBtn:nth-child(1){
+	 margin-left: 0;
+}
+.picBtn img{
+	width: 85px;
+    height: 85px;
+} 
+.goodsDetailsTextBox{
+	width: 680px;
+	height: 190px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.numBtnAndShopCarBtn{
+	width: 529px;
+	height: 43px;
+	margin-top: 20px;
+}  
+.numBtnBox{
+	width: 76px;
+	height: 41px;
+	margin-left: 20px;
+	position: relative;
+}
+.numBox{
+	width: 39px;
+    height: 39px;
+    line-height: 41px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border: 1px solid #e2e2e2;
+    border-right: none
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+.numBtnBox button {
+    display: block;
+    width: 18px;
+    height: 21px;
+    line-height: 20px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+.decreaseBtn{
+	top: 20px;
+    right: 19px;
+    border-top: none;
+}
+.increaseBtn{
+    border-bottom: 1px solid #e2e2e2;
+    height: 21px;
+    top: 0;
+    right: 19px;
+}
+.disabled{
+    width: 187px;
+    height: 43px;
+    margin-left: 10px;
+}
+.disabled a{	
+    display: block;
+    width: 187px;
+    height: 25px;
+    padding: 9px 0;
+    text-align: center;
+    font: normal 18px/25px "Microsoft YaHei";
+    color: #fff;
+    cursor: default;
+    background: #757575;
+    border-radius: 3px;
+}
+.disabled a:hover{
+	text-decoration: none;
+}
+.disabled a i{
+	width: 28px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    background: url(../img/商品详情/product.png) no-repeat -47px 0;
+}
+.goodsContent{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.guessLikeBox{
+	width: 250px;
+	margin-bottom: 20px;
+    border: 1px solid #cde4c0;
+    background: #fff;
+}
+.guessLikehead{
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #008842;
+}
+.guessLikeGoodsBox{
+	position: relative;
+    height: 70px;
+    padding: 10px 0;
+    
+}
+.guessLikeGoodsPic{
+	margin-left: 10px;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #dfdfdf;
+}
+.guessLikeGoodsPic a img{
+    display: inline-block;
+    width: 68px;
+    height: 68px;	
+} 
+.guessLikeGoodsTxt{
+    width: 153px;
+    margin-left: 10px;
+    padding: 4px 0;
+    line-height: 20px; 
+}
+.guessLikeGoodsTxt strong {
+    display: block;
+    height: 40px;
+    margin-bottom: 5px;
+    color: #777;
+    font-weight: normal;
+}   
+.guessLikeGoodsTxt span{
+	font-size: 12px;
+    color: #e8380d;
+}
+.addShopCar{
+	z-index: 1;
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+    padding: 3px 8px;
+    background: #008842;
+    border-radius: 3px;
+}
+.guessLikeGoodsBox:hover a{
+	text-decoration: none;
+}
+.guessLikeGoodsBox:hover .addShopCar{
+	display: block;
+	color: #fff;
+}
+.guessLikeGoodsBox:nth-child(4){
+	border-bottom: none;
+}
+.hotSale{
+	width: 930px;
+	height: 278px;
+	border: 1px solid #dfdfdf;
+	background: #fff;
+}
+.hotSaleHead{
+    padding: 0 25px;
+    line-height: 35px;
+    color: #008842;
+    font-size: 14px;
+    font-weight: bold;
+}
+.p-img {
+    margin-bottom: 10px;
+}
+.hotSaleHead ul li{
+	text-align: center;
+}
+.hotSalegoods{
+	margin-left: 55px;
+}
+.hotSalegoods:nth-child(1){
+	margin-left: 20px;
+}   
+.p-name {
+    overflow: hidden;
+    height: 36px;
+    width: 132px;
+    line-height: 18px;
+    margin-bottom: 7px;
+}
+.p-name a {
+    color: #777;
+}
+.p-price strong{
+	color: #e8380d;
+    padding-right: 15px;
+}
+	
+.p-price del{
+    text-decoration: line-through;
+}
+.goodsIntroduceBox{
+	width: 930px;
+	border: 1px solid #dfdfdf;
+	margin-top: 20px;
+	background: #fff;
+}
+.IntroduceTable {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d4d4d4;
+    background: #fff;
+    margin-top: -1px;
+}
+.IntroduceUl li {
+/*    position: relative;*/
+    display: block;
+    float: left;
+    width: 132px;
+/*    margin-top: -1px;*/
+    text-align: center;
+    border-right: 1px solid #d4d4d4;
+    height: 36px;
+    padding-top: 4px;
+    line-height: 36px;
+    font-size: 12px;
+}
+.goodsIntroduce{	
+	border-bottom: 3px solid #fff;
+    background: url(../img/商品详情/product.png) no-repeat -33px -58px #fff;
+}
+/*.goodsAppraise{
+	display: none;
+    border-bottom: 3px solid #fff;
+    background: url(../img/商品详情/product.png) no-repeat -33px -58px #fff;
+}*/
+.IntroduceUl li b{
+    font-weight: normal;
+    color: #e8380d;
+    padding-left: 5px;
+}
+.allInContent{
+/*	display: none;*/
+	width: 880px;
+	margin: 20px auto;
+}
+.allInContent table{
+	width: 100%;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    border: 1px solid #d3e2ca;
+}
+.allInContent table tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.allInContent table th {
+    background: #e7f5ee;
+    font-weight: normal;
+    width: 150px;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+}
+.allInContent table th, .allInContent table td {
+    color: #666;
+    border: 1px solid #d3e2ca;
+    border-width: 1px 0;
+}
+.allInContent table td{
+	padding: 10px 10px 10px 20px;
+}
+.allAppraise{
+	display: none;
+	width: 900px;
+	margin: 20px auto;
+}  

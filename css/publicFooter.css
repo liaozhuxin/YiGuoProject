@@ -1,0 +1,233 @@
+/************************************footer*********************************/
+.service{
+	background: #e0e0e0;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+.serviceBox{
+	height: 42px;
+}
+.serviceNameList{
+    width: 190px;
+    height: 42px;
+    margin-left: 55px;
+    padding-left: 55px;
+    background: url(../img/icon/footer_service_icon.png) no-repeat left top;
+}
+.serviceNameList:nth-child(1){
+	background-position: 0 0;
+}
+.serviceNameList:nth-child(2){
+	background-position: 0 -42px;
+}
+.serviceNameList:nth-child(3){
+	background-position: 0 -84px;
+}
+.serviceNameList:nth-child(4){
+	background-position: 0 -126px;
+}
+.serviceBox li b{
+	display: block;
+	padding-right: 75px;
+    color: #007f4d;
+    border-left: 1px solid #a6a6a6;
+    font: normal 18px/25px "Microsoft YaHei";
+}
+.serviceBox li span {
+    display: block;
+    padding-right: 39px;
+    border-left: 1px solid #a6a6a6;
+}
+
+.footerContent{
+	height: 342px;
+	margin-top: 50px;
+}
+.footerContentBox{
+	width: 190px;
+	height: 145px;
+	margin-left: 55px;
+	margin-top: 10px;
+}
+.footerContentTitle p{
+	display: initial;
+	text-indent: 20px;
+	color: #444;
+	font-size: 15px;
+	padding-left: 15px;
+}
+.footerContentTitlePic{
+	width: 30px;
+	height: 23px;
+	background-image: url(../img/icon/footer_icon.png);
+}
+.footerContentBox ul{
+	display: block;
+	height: 110px;
+	width: 177px;
+	margin-left: 13px;
+	margin-top: 17px;
+	border-left:1px dashed #a6a6a6; ;
+}
+.footerContentBox ul li{
+	display: block;
+	margin-top: 7px;
+	margin-left: -85px;
+}
+.footerContentBox ul li:hover{
+	text-decoration: underline;
+	color: #007f4d;
+}
+.sidebar{
+	height: 104px;
+	width: 56px;
+	position: fixed;
+	right: 7px;
+	top: 500px;
+	z-index: 6;
+}
+.customerService{
+	display: block;
+	width: 50px;
+	height: 42px;
+	background-image: url(../img/icon/sidebar.png);
+	background-position: 0 -46px;
+}
+.customerService:hover{
+	background-position: -54px -46px;
+}
+#backTop{
+	display: block;
+	margin-top: 15px;
+	width: 50px;
+	height: 42px;
+	background-image: url(../img/icon/sidebar.png);
+	background-position: 0 0;	
+}
+#backTop:hover{
+	background-position: -55px 0;
+}
+/***********************************左边侧边栏****************************************/
+#sideBarMenu{
+	width: 40px;
+	height: 359px;
+	position: fixed;
+	left: 20px;
+	top: 150px;
+	z-index: 10;
+	display: none;
+}
+.sideBarMenuBtnList{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	z-index: 12;
+}
+.sideBarMenuBtn1{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+}
+.sideBarMenuBtn2{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -40px 0;
+}
+.sideBarMenuBtn3{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -80px 0;
+}
+.sideBarMenuBtn4{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -120px 0;
+}
+.sideBarMenuBtn5{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -160px 0;
+}
+.sideBarMenuBtn6{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -200px 0;
+}
+.sideBarMenuBtn7{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -240px 0;
+}
+.sideBarMenuBtn8{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -280px 0;
+}
+.sideBarMenuBtn9{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-position: -320px 0;
+}
+.sideBarMenuBtnList:hover .sideBarMenuBtnText{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+.sideBarMenuBtnText{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	text-indent: 4.1px;
+	font-size: 12px;
+	background: #008842;
+	color: white;
+	text-decoration: none;
+}

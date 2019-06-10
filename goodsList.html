@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/publicHeader.css" />
+		<link rel="stylesheet" type="text/css" href="css/publicFooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goodList.css"/>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/publicHeader.js" ></script>
+		<script src="js/pubicFooter.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/goodsList.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header></header>
+		<!--------------------------------------body---------------------------------------------->
+		
+		<div class="c bigPicBox">
+			<img class="picSty"src="img/goodsList/bigpic01.jpg"/>
+			<img class="picSty"src="img/goodsList/bigpic02.jpg"/>
+			<img class="picSty"src="img/goodsList/bigpic03.jpg" style="margin-left: 6.6px;"/>
+			<img class="picSty"src="img/goodsList/bigpic04.jpg" style="margin-left: 6.6px;"/>
+			<img class="picSty"src="img/goodsList/bigpic05.jpg" style="margin-left: 6.81px;"/>							
+		</div>
+		<div class="select c">       
+	        <div class="title">►所有分类</div>
+	        <ul>
+	            <li><a href="">牛排</a></li>
+	            <li><a href="">冰鲜肉</a></li>
+	            <li><a href="">进口牛肉</a></li>
+	            <li><a href="">国产牛肉</a></li>
+	            <li><a href="">猪肉</a></li>
+	            <li><a href="">羊肉</a></li>
+	            <li><a href="">香肠</a></li>
+	            <li><a href="">火腿/培根</a></li>
+	            <li class=" "><a href="">肉制品</a></li>
+	            <li class="last"><a href="">进口鹿肉</a></li>
+	    	</ul>
+		</div>		
+		<div id="formCx" class="picListSelect c">
+	        <div class="filter_sort">
+	            <a class="on" style="background: #f1f1f1 ;">默认排序</a>
+	            <a class="">销量<i class="dowm"></i></a>
+	            <a class="price">价格<i class="sort_down"></i></a>
+	            <a class="" >评论<i class="dowm"></i></a>
+	        </div>
+    	</div>
+		<div class="c goodsListContentBox">
+			<ul id="goodsListContent">
+				<li class="listSty">
+					<div class="addShopCarBtn">
+						加入购物车
+					</div>
+					<div class="listpicBox">
+						<img src="img/goodsList/list1.jpg"/>
+					</div>
+					<a>原膳内蒙古带骨羊排1.2kg</a>
+					<strong>¥89.90</strong>
+				</li>
+			</ul>
+		</div>
+		<div class="c bodyLast">
+			<img src="img/icon/loding.gif" style="display: block; margin:0 auto;"/>
+		</div>		
+		<!---------------------------------------footer-------------------------------------------------->
+		<footer></footer>		
+		<script>
+				$('header').load('PublicHeader.html');
+				$('footer').load('PublicFooter.html');
+		</script>		
+	</body>		
+</html>

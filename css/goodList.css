@@ -1,0 +1,155 @@
+.picSty{
+	display:inline-block;	
+	margin-top: 15px;
+}
+.picSty:nth-child(1){
+	margin-top: 0;
+}
+.picSty:hover{
+	box-shadow:  2px 2px 5px #444;
+}
+.select{
+	line-height: 25px;
+    margin-top: 20px;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    border-right-color: #e5e5e5;
+    height: 37px;
+}
+.title{
+	float: left;
+    width: 78px;
+    padding: 5px 0 5px 20px;
+    color: #909090;
+}
+.select ul{
+	float: left;
+	width: 1102px;
+	background: #f1f1f1;
+}
+.select li {
+    float: left;
+    line-height: 37px;
+}
+.select li:after {
+    content: "|";
+}
+.select a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #777;
+}
+.select a:hover{
+	text-decoration: underline;
+	color: #008842;
+}
+.picListSelect{
+    background: #eaeaea;
+    height: 40px;
+    margin: 20px auto;
+}
+.picListSelect a {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-left: -4px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #c7c7c7;
+    background: #fff;
+}
+.filter_sort{
+	height: 35px;
+	margin-left: 10px;
+}
+.dowm{	
+    width: 10px;
+    height: 16px;
+    margin-left: 3px;
+    background: url(../img/goodsList/filter_icon.png) no-repeat 0 0;
+}
+.filter_sort a:hover .dowm{
+	background-position:-10px 0 ;
+}
+.filter_sort a:hover .sort_down{
+	background-position:-30px 0 ;
+}
+.filter_sort a:hover{
+	color: #008842;
+	text-decoration: none;
+}
+.sort_down{  
+    width: 10px;
+    height: 16px;
+    margin-left: 3px;
+    background: url(../img/goodsList/filter_icon.png) no-repeat 0 0;
+    background-position: -20px 0;
+}
+.goodsListContentBox{
+	margin-top: 15px;
+	overflow: hidden;
+}
+#goodsListContent{
+	display: block;
+	margin: 0 auto;
+}
+.listSty{
+	float: left;
+	height: 358px;
+	width: 290px;
+	background: white;
+	margin: 10px 0 0 8px;
+	position: relative;
+	overflow: hidden;
+}
+.listpicBox{
+	width: 290px;
+	height: 290px;
+	overflow: hidden;
+}
+.listpicBox img{
+	width: 290px;
+	height: 290px;
+	transition:all .5s;
+}
+.listSty a{
+	line-height: 20px;
+	display: block;
+	color: #444;
+	text-align: left;	
+}
+.listSty a:hover{
+	color: #008000;	
+}
+.listSty strong{
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+    color: #e7380d;
+    text-align: left;
+}
+.addShopCarBtn{
+	display: none;
+	position: absolute;
+	top: 240px;
+	left: 40px;
+	height: 30px;
+	width: 200px;
+	background: #008842;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	z-index: 5;
+}
+/*.addShopCarBtn:hover{
+	background: #007F4D;
+}
+.listSty:hover .addShopCarBtn{
+	display: block;
+}*/
+.bodyLast{
+	margin: 20px auto;
+}

@@ -1,0 +1,448 @@
+/*header*/
+body{
+	background: #f7f9f8;
+	font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53"
+}
+.t{
+	width: 100%;
+}
+.c{
+	width: 1200px;
+	margin: 0 auto;
+}
+ul,li,a{	
+	text-align: center;
+	color: #444;
+}
+.topNav{
+	height: 30px;
+	background: #f7f9f8;
+}
+.wrap{
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+}
+#wrapLeft{
+	height: 30px;
+	width: 225px;
+	position: relative;
+}
+.wrapLeftText{
+	margin-right: 10px;
+	color: #008842;
+}
+.cityName{
+	color: #008842;
+	width: 49px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.cityName:hover{
+	background: #008842;
+	color: white;
+	text-decoration: none;
+}
+.wrapLeftText:hover .cityNameBox{
+	display: block;
+}
+.cityName:hover i{
+    background: url(../img/icon/header-img.png) no-repeat;
+    background-position-x: -25px;
+    background-position-y: 0;
+}
+.cityName i{
+	width: 8px;
+    height: 4px;
+    margin-left: 5px;
+    background: url(../img/icon/header-img.png) no-repeat 0 0;
+    transition: transform .2s ease-in 0s;
+    -webkit-transition: -webkit-transform .2s ease-in 0s;
+}
+
+i{
+    display: inline-block;
+    vertical-align: middle;
+}
+.cityNameBox{
+	display: none;
+    position: absolute;
+    top: 28px;
+    left: 118px;
+    width: 482px;
+   height: 315px;
+    border: 2px solid #007f4d;
+    background: #fff;
+    z-index: 10;
+    /*overflow: hidden;*/
+}
+.cityNameBoxTop{
+	height: 30px;
+	padding: 0 15px;
+    line-height: 30px;
+    color: #727272;
+    background: #ededed;
+
+}
+#hotCity{
+	height: 85px;
+	width: 485px;
+	margin-left: -2px;
+}
+#cList{
+	position: relative;
+}
+.cityList{
+	display: inline-block;
+	height: 30px;
+	width: 90px;	
+	text-align: center;
+	line-height: 30px;
+	color: #007F4D;	
+}
+.cityList:nth-child(1){
+	margin-left: 10px;
+	border: 1px solid #ededed;;
+}
+/*#cityListTwo:hover+#cityListOne{
+	border:none
+}*/
+.cityList:hover{	
+	border: 1px solid #ededed;
+}
+#cityListTwo:hover #cityListBoxTwo{
+	display: block;
+}
+#cityListBoxOne{
+	position: absolute;
+	top: 28px;
+	left: 0;	
+}
+
+#cityListBoxTwo{
+	display: none;
+	position: absolute;
+	top: 28px;
+	left: 2px;	
+}
+.wrapLeftText:nth-child(1){
+	margin-right: 10px;
+	color: #444;
+}
+#wrapRight{
+	height: 30px;
+	width: 660px;
+}
+.wrapRightText{
+	float: left;
+	padding: 0 10px
+}
+.topBtn{
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/icon/header-img.png);
+}
+.topBtnPeople{
+	background-position: -40px 0;
+}
+.topBtnList{
+	width: 13px;
+	height: 15px;
+	background-position:0px 6px;
+	background-image:no-repeat;
+}
+.topBtnPhone{
+	background-position:-62px 0;
+}
+.topBtnGiftCard{
+	width: 22px;
+	background-position:-147px 0;
+}
+.topBtnGift{
+	background-position:-86px 0;
+}
+.topBtnBusiness{
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/icon/topbusiness.png);
+}
+.headerSearch{
+	height: 78px;
+	background: #e0e0e0;
+}
+.headerSearchBox{
+	height: 78px;
+}
+.SearchBox{
+	width: 528px;
+	height: 58px;
+	margin:15px 0 0 135px;
+}
+.SearchInputBtn{
+	width: 528px;
+	height: 28px;
+/*	border: .5px solid #007F4D;*/
+}
+#searchText{
+	float: left;
+    width: 425px;
+    height: 26px;
+    line-height: 27px;
+    padding: 0 10px;
+    border: 1px solid #008842;
+    background: #e0e0e0;
+    outline: none;
+}
+#searchBtn{
+	float: left;
+    display: block;
+    width: 81px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    background: #008842;
+}
+#searchMenu{
+	margin-top: 10px;
+}
+.searchMenuName{
+	display: inline-block;
+	height: 30px;
+	font-size: 12px;
+    color: #008842;
+    margin-left: 8px;
+    
+}
+.searchMenuName:nth-child(1){
+	margin-left: 1px;
+}
+.shopCar{
+	width: 172px;
+	height: 42px;
+	border: 1px solid #008842;
+	margin:15px 0; 
+	background: white;
+}
+.shopCarPic{
+    width: 30px;
+    height: 19px;
+    margin: 11px 0 0 50px;
+    background-position: -112px 0;
+}
+.shopCarOverNum{
+	color: #008842;
+	margin-left: 8px;
+	font-weight:550;
+	font-size: 13px;
+	line-height: 12px;;
+}
+.shopCarNum{
+	font-size: 23px;
+	color: #008842;
+	line-height: 32px;
+	margin-left: 10px;
+}
+/****************************吸顶**************************************/
+.headerSearch2{
+	height: 46px;
+	background: #e0e0e0;
+	opacity: 0.9;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.headerSearchBox2{
+	height: 46px;
+	/*opacity: 1;*/
+}
+.SearchBox2{
+	width: 770px;
+	height:30px;
+	margin:10px 0 0 135px;
+	/*opacity: 1;*/
+}
+#searchText{
+	float: left;
+    width: 425px;
+    height: 26px;
+    line-height: 27px;
+    padding: 0 10px;
+    border: 1px solid #008842;
+    background: #e0e0e0;
+    
+}
+#searchBtn{
+	float: left;
+    width: 81px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    background: #008842;
+}
+#searchMenu2{
+	width: 220px;
+	margin-top: 7px;
+}
+.searchMenuName2{
+	height: 30px;
+	font-size: 12px;
+    color: #008842;
+    margin-left: 8px;
+ 
+}
+.searchMenuName2:nth-child(1){
+	margin-left: 10px;
+}
+.shopCar2{
+	width: 142px;
+	height: 34px;
+	border: 1px solid #008842;
+	margin:5px 0; 
+	background: white;
+	/*opacity: 1;*/
+}
+.shopCarPic{
+    width: 30px;
+    height: 19px;
+    margin: 11px 0 0 40px;
+    background-position: -112px 0;
+}
+.shopCarOverNum{
+	color: #008842;
+	margin-left: 8px;
+	font-weight:520;
+	font-size: 13px;
+	line-height: 12px;;
+}
+.shopCarNum2{
+	font-size: 20px;
+	color: #008842;
+	line-height: 37px;
+	margin-left: 5px;
+}
+#banner{
+	height:38px ;
+}
+#topNavMenuBoxFather{
+	width: 180px;
+    height: 38px;
+    position: relative;
+    background: #008842;
+    z-index: 9;
+    text-align: center;
+    line-height: 38px;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+}
+#topNavMenuBox{
+	display: none;
+	height: 464px;
+	width: 180px;
+	background: white;
+	opacity: 0.9;
+	position: absolute;
+	top: 38px;
+	left: 0;
+}
+
+.topNavMenuNameList{
+	width: 180px;
+	height: 42px;
+	line-height: 42px;
+	text-align:left;
+	font-size: 14px;
+	font-weight: 1;
+	transition: all .5s; 
+}
+/*.topNavMenuNameList:hover{
+	border: 1px solid #007F4D;
+}*/
+.topNavMenuNameList:hover i{
+	margin-left: 26px;
+}
+.topNavMenuNameList:hover .topNavMenuName{
+	display: block;
+}
+.topNavMenuNameListBtnPic{
+	display: inline-block;
+	margin-left: 20px;
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/icon/floor_guide.png);	
+	background-repeat: no-repeat;
+}
+.topNavMenuNameList:nth-child(1) i{
+	background-position: -7px -6px;
+}
+.topNavMenuNameList:nth-child(2) i{
+	background-position: -47px -6px;
+}
+.topNavMenuNameList:nth-child(3) i{
+	background-position: -87px -6px;
+}
+.topNavMenuNameList:nth-child(4) i{
+	background-position: -127px -6px;
+}
+.topNavMenuNameList:nth-child(5) i{
+	background-position: -7px -6px;
+}
+.topNavMenuNameList:nth-child(6) i{
+	background-position: -167px -6px;
+}
+.topNavMenuNameList:nth-child(7) i{
+	background-position: -207px -6px;
+}
+.topNavMenuNameList:nth-child(8) i{
+	background-position: -247px -6px;
+}
+.topNavMenuNameList:nth-child(9) i{
+	background-position: -287px -6px;
+}
+.topNavMenuNameList:nth-child(10) i{
+	background-position: -206px -6px;
+}
+.topNavMenuNameList:nth-child(11) i{
+	background-position: -368px -6px;
+}
+.topNavMenuName{
+	z-index: 3;
+    display: none;
+    position: absolute;
+    top: -38px;
+    left: 170px;
+    width: 215px;
+    height: 464px;
+    padding: 17px 20px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9);
+}
+.topNavTransverseMenu{
+	overflow: hidden;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+}
+.TransverseMenuList {
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.TransverseMenuList:hover{
+	color: #008842;
+}
