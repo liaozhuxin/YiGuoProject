@@ -84,6 +84,9 @@ window.onload = function(){
 								oTopNavMenuBox.style.display = "block";
 							}
 			}
+			oTopNavMenuBox.onclick = function(e){
+				e.stopPropagation();
+			}
 			oTopNavMenuBoxFather.onmouseover = function(){
 							var oValue = oTopNavMenuBox.getAttribute("value");
 							if(oValue == 1){

@@ -1,11 +1,12 @@
 $(function(){
-	//左移动画
-	$('.topNavMenuNameList').mouseover(function(){
-		$('.topNavMenuNameList').eq($('.topNavMenuNameList').index($(this))).css('transform','translateX(10px)')
-	})
-	$('.topNavMenuNameList').mouseout(function(){
-		$('.topNavMenuNameList').eq($('.topNavMenuNameList').index($(this))).css('transform','none')
-	})
+//	//左移动画
+//	$('.topNavMenuNameList').hover(function(){
+//		$('.topNavMenuName').eq($(this).index()).fadeIn();
+//	})
+//	$('.topNavMenuNameList').mouseleave(function(){
+//		$('.topNavMenuName').eq($(this).index()).fadeOut();
+//		
+//	})
 	
 	
 	$('.moveRight').mouseover(function(){
@@ -15,12 +16,13 @@ $(function(){
 		$(this).children('img').css('transform','none')
 	})
 	
-	$('.sideBarMenuBtnList').mouseover(function(){
-		$(this).children('.sideBarMenuBtnText').css({'display':'block','text-decoration': 'none','color':'white'})
+	$('.sideBarMenuBtnList').mouseenter(function(){
+		$(this).children('.sideBarMenuBtnText2').css({'display':'block','text-decoration': 'none','color':'white'})
 	})
-	$('.sideBarMenuBtnList').mouseout(function(){
-		$(this).children('.sideBarMenuBtnText').css('display','none')
+	$('.sideBarMenuBtnList').mouseleave(function(){
+		$(this).children('.sideBarMenuBtnText2').css('display','none')
 	})
+//	$(document).Element.scrollTop = $(document).scroll;
 	$(document).scroll(function(){
 		 var scroH = $(document).scrollTop();
 		 console.log(scroH)
